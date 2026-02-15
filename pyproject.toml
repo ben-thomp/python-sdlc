@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "py-sdlc"
+name = "python-sdlc"
 version = "0.0.1"
 description = "Python SDLC toolkit."
 readme = "README.md"
