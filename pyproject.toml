@@ -1,6 +1,6 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-sdlc"
@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [
-    { name = "benkt" },
+    { name = "ben-thomp" },
 ]
 classifiers = [
     "Development Status :: 1 - Planning",
@@ -18,4 +18,4 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/benkt/py-sdlc"
+Repository = "https://github.com/ben-thomp/py-sdlc"
