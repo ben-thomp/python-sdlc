@@ -1,3 +1,3 @@
-# py-sdlc
+# python-sdlc
 
 Python SDLC toolkit.
