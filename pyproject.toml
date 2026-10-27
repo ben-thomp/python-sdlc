@@ -7,7 +7,7 @@ name = "python-sdlc"
 version = "0.0.2"
 description = "Python SDLC toolkit."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = "MIT"
 authors = [
     { name = "Ben Thompson" },
@@ -17,5 +17,28 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 
+[project.optional-dependencies]
+lint = [
+    "black",
+    "ruff",
+    "mypy",
+    "pytest",
+]
+
+[project.scripts]
+sdlc = "python_sdlc.cli:main"
+
 [project.urls]
 Repository = "https://github.com/ben-thomp/python-sdlc"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
